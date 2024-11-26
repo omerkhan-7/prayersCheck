@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #6f86d6, #48c6ef);
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+    border: 2px solid #6a5acd; /* Adding border */
+    box-sizing: border-box; /* Ensure padding doesn't increase size */
+    margin-top: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+.checkbox-group-vertical {
+    display: flex;
+    flex-direction: column; /* Align checkboxes vertically */
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+    margin-bottom: 10px; /* Add spacing between checkboxes */
+}
+
+.submit-btn {
+    background-color: #6a5acd;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #5a4c9d;
+}
+
+#responseMessage {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.submitted-data-container {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.submitted-data {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.submitted-data p {
+    margin: 5px 0;
+    color: #555;
+}

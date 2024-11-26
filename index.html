@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaz Tracker Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Namaz Tracker</h2>
+        <form id="namazForm">
+            <div class="form-group">
+                <label for="date">Select Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label>Check Today's Prayers</label>
+                <div class="checkbox-group-vertical">
+                    <label><input type="checkbox" name="prayers" value="Fajr"> Fajr</label>
+                    <label><input type="checkbox" name="prayers" value="Zuhr"> Zuhr</label>
+                    <label><input type="checkbox" name="prayers" value="Asar"> Asar</label>
+                    <label><input type="checkbox" name="prayers" value="Maghrib"> Maghrib</label>
+                    <label><input type="checkbox" name="prayers" value="Isha"> Isha</label>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <div id="responseMessage"></div>
+        <div id="submittedData" class="submitted-data-container"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
